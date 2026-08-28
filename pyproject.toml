@@ -1,0 +1,19 @@
+[project]
+name = "sqlalchemy-aula"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "CaioWill",email = "caio5.william5@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "sqlalchemy (>=2.0.52,<3.0.0)",
+    "psycopg-binary (>=3.3.4,<4.0.0)",
+    "psycopg[binary] (>=3.3.4,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
