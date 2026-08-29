@@ -1,0 +1,11 @@
+Generic single-database configuration.
+    alembic init alembic
+    alembic revision -m 'nome'
+    alembic upgrade head
+    alembic downgrade base
+
+    sqlacodegen url > models.py
+    sqlacodegen --generator tables url > models.py
+
+    alembic upgrade +1 --sql ->> migração offline - manda o codigo sql
+    alembic downgrade head:-1 --sql ->> ou id-versao2:id-versao1
