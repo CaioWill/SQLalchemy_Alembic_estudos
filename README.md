@@ -1,32 +1,37 @@
-# SQLAlchemy - dunossauro
-   > video https://www.youtube.com/watch?v=t4C1c62Z4Ag&list=PLR2rHG9gyzbI&index=5
-   
-## 1. O basico
-   > Um kit de ferramentas para trabalhar com banco de dados SQL - banco de dados relacionais 
+# Estudos de SQLAlchemy e Alembic
 
-## 2. Core
-   > Engine - connect - conexão - cria uma conexão com o sqlalchemy
-   > Dialect - dialeto - traduz o sql para o db usado (postgres, sql server)
-   > Pool - reservatorio de conexões - deixa a conexao aberta - 5
+Repositório com anotações e exemplos práticos de SQLAlchemy (ORM) e Alembic (migrações de banco de dados), seguindo o conteúdo do Dunossauro.
 
-## 3. ORM - Obeject Relational Mapper
-   > Mapeamento entre o banco relacional e um objeto
+<br>
 
+## O que foi estudado
 
-# Banco de dados evolutivos - Live 211 dunossauro
+**SQLAlchemy**
+- **Core**: Engine (conexão com o banco), Dialect (tradução de SQL para o banco específico, ex: PostgreSQL), Connection Pool (gerenciamento de conexões abertas)
+- **ORM (Object Relational Mapper)**: mapeamento entre tabelas do banco relacional e classes/objetos Python
 
+**Migrações de banco de dados (Alembic)**
+- Conceito de migrações evolutivas: versionamento de schema, prevenção de erros manuais, rollback em caso de conflito, padronização entre ambientes
+- Configuração e uso do Alembic
+- Geração automática de modelos e migrações a partir de classes SQLAlchemy
 
-## 1 - Migraçãos
-   > Oque são migrações de dados evolutivos
-      - Versionamento do banco de dados - verções do db
-      - Previne erros - evita a alteração amnual do db
-      - Rollback - caso tenha algum conflito, bug é possivel voltart a versão
-      - Padronização - previne que todos usem a mesma versão em diferentes ambientes
+<br>
 
-## 2 - Alembic
+## Estrutura do repositório
 
+- `models.py` — definição dos modelos (classes mapeadas via SQLAlchemy ORM)
+- `alembic/` — scripts e versões de migração
+- `exemplos/` — exemplos práticos de uso
 
-## 3 - modelos automaticos
+<br>
 
+## Próximos passos
 
-## 4 - migrações automaticas
+Aplicação prática desses conceitos no curso de FastAPI (Dunossauro):
+https://youtube.com/playlist?list=PLOQgLBuj2-3KT9ZWvPmaGFQ0KjIez0403
+
+<br>
+
+---
+
+Parte da minha trilha de estudos para desenvolvimento backend com Python.
