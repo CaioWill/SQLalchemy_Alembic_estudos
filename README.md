@@ -15,6 +15,10 @@ Repositório com anotações e exemplos práticos de SQLAlchemy (ORM) e Alembic 
 - Configuração e uso do Alembic
 - Geração automática de modelos e migrações a partir de classes SQLAlchemy
 
+**Requests assíncronos**
+- Uso do resquest assincronos: em aplicações com requisições em api, as apis demoram um tepo para enviar a requisição, logo usamos os resquest assincronos para o python ir fazendo outras quequisições enquando espera a primeira.  
+- loop de eventos: a 'fila' de eventos que é processado nas 'pausas' do await.  
+
 <br>
 
 ## Estrutura do repositório
