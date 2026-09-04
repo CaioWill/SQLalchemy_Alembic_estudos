@@ -1,7 +1,7 @@
-import pytest
 from time_machine import travel
 from datetime import datetime
 from dataclasses import dataclass, field
+from faker import Faker
 
 db = []
 
@@ -46,3 +46,11 @@ def test_tarefa_periodica():
 
     # assert datetime.now().hour ==
     assert tarefa_periodica()
+
+
+def test_faker(faker: Faker):
+    fake_data= {
+        'name' : faker.name(),
+        'email': faker.email()
+    }
+    assert ...
